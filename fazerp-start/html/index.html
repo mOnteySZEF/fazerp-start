@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>fazerp</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <section class="page active">
+            <section class="card-info">
+                <img src="https://i.imgur.com/qzySSqm.png" alt="logo FazeRP" id="logo">
+                <h1 id="texth1">Witaj na FazeRP.eu!</h1>
+                <p id="text">Mamy nadzieję, że spędzisz u nas wspaniały czas!</p>
+                <p id="text" style="font-style: italic;">Link do regulaminu: <a style="color: #00aaff; font-weight: 800; text-decoration: underline;" href="https://fazerp.eu/regulamin" target="_blank">https://fazerp.eu/regulamin</a></p>
+                <div class="circle-container">
+                    <div class="circle active"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+                <a class="button" id="btn-next">Przejdź dalej</a>
+            </section>
+        </section>
+
+        <section class="page">
+            <section class="card-info">
+                <h2 id="texth2">Brawo, udało ci się przejść do kolejnego etapu!</h2>
+                <p id="text">Pozwól, że poświęcę chwilę na przedstawienie i oprowadzenie Cię po naszym serwerze! <br><strong>Użyj poniższych komend aby dobrze zacząć rozgrywkę!</strong><br><br>
+                    <a style="color: #00ff44;">/kit start</a> - darmowe itemki na start<br>
+                    <a style="color: #00ff44;">/odbierzauto</a> - odbierz swoje startowe <a style="color: #3168f5;">auto</a> i darmowy <a style="color: #FFD700;">VIP</a><br>
+                    <a style="color: #00ff44;">/tpmenu</a> - wybierz miejsce greenzone<br>
+                    <a style="color: #00ff44;">/hud</a> - Spersonalizuj swoje ustawienia rozgrywki<br>
+                    <a style="color: #11e94b;">[F1]</a> - Menu gracza</p>
+
+                    <a class="button" id="btn-next">Zapoznałem Się</a>
+                    <div class="circle-container">
+                        <div class="circle"></div>
+                        <div class="circle active"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+            </section>
+        </section>
+        <section class="page">
+            <section class="card-info">
+                <img class="icons" id="rules" src="./icons/icon_regulamin.svg" alt="">
+                <h2 id="texth2">Następny etap to Regulamin!</h2>
+                <section class="card-rules">
+                    <a style="color: #ccc; font-weight: 800;">1.</a> Na naszym serwerze wymagana jest inicjacja słowna, np. <a style="color: #ff0000;">"poddaj się"</a> wyjątkiem są czerwone strefy.<br>
+                    <a style="color: #ccc; font-weight: 800;">2.</a> W czasie pobytu na naszym serwerze zakazane jest używanie <a style="color: #ff0000;">wspomagaczy, cheatów, exploitów</a>.<br>
+                    <a style="color: #ccc; font-weight: 800;">3.</a> Grając na serwerze, automatycznie <a style="color: #04d93d;">akceptujesz zasady naszego serwera.</a><br>
+                    <a style="color: #ccc; font-weight: 800;">4.</a> Wymagane jest korzystanie z <a style="color: #3168f5;">voice-chatu</a>, aby umożliwić komunikację z innymi graczami.<br>
+                    <a style="color: #ccc; font-weight: 800;">5.</a> W strefie doków gracze muszą mieć na sobie <a style="color: #04d93d;">identyczne ubranie.</a><br>
+                    <a style="color: #ccc; font-weight: 800;">6.</a> Kradzież pojazdów w strefie doków jest zakazana.<br>
+                    <a style="color: #ccc; font-weight: 800;">7.</a> Przed <a style="color: #fffb00;">greenzonami</a>[poza miastem] można strzelać bez inicjacji, lecz strzelanie do pojazdów jest traktowane jako RDM.<br>
+                    <a style="color: #ccc; font-weight: 800;">8.</a> Inicjacja na dokach jest wymagana słownie wprost do innego gracz, nie dotyczy to innych sytuacji.<br>
+                    <a style="color: #ccc; font-weight: 800;">9.</a> Po <a style="color: #ff0000;">wezwanie,</a> gracz musi jak najszybciej wejść na kanał pomocy.<br>
+                    <a style="color: #ccc; font-weight: 800;">10.</a> Jeżeli gracz po wezwaniu nie wejdzie na kanał pomocy, będzie srogo ukarany.<br>
+                    <a style="color: #ccc; font-weight: 800;">11.</a> Redzone'y na serwerze obejmują: Strefy, doki, s1, darkshop, zrzuty.<br>
+                    <a style="color: #ccc; font-weight: 800;">12.</a> Surowo <a style="color: #ff0000;">zakazuje</a> się reklamowania stron trzecich, serwerów FiveM oraz serwerów z cheatami (reklama serwera z cheatami = przyznanie się do cheatów).<br>
+                    <a style="color: #ccc; font-weight: 800;">13.</a> <a style="color: #3168f5;">Administracja serwera</a> ma prawo do zmiany zasad, które wchodzą w życie z chwilą ich ogłoszenia.<br>
+                    <a style="color: #ccc; font-weight: 800;">14.</a> Do zgłaszania problemów lub graczy należy używać komendy /report na serwerze lub ticketów na naszym Discordzie. Wiadomości prywatne typu "id X robi rdma" będą ignorowane.<br>
+                    <a style="color: #ccc; font-weight: 800;">15.</a> Każdy /report, który nie dotyczy prośby o pomoc lub zgłoszenia łamania regulaminu, będzie ignorowany.<br>
+                    <a style="color: #ccc; font-weight: 800;">16.</a> <a style="color: #ff0000;">Zakazuje</a> się modyfikowania plików gry, takich jak propy, np. krzaki, woda, płoty, platformy itp.<br>
+                </section>
+                <a class="button rules" id="btn-next">Zapoznałem się</a>
+
+                <div class="circle-container">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle active"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+            </section>
+        </section>
+        <section class="page">
+            <section class="card-info">
+                <h2 id="texth2">Klawiszologia</h2>
+                <br>
+                <p id="napis2">Skróty klawiszowe</p>
+                <p id="napis">Komendy</p>
+            <section class="card-klawisze">
+                <a style="color: #00aaff; font-weight: 800;">F1</a> → Menu gracza<br>
+                    <a style="color: #00aaff; font-weight: 800;">F2</a> → Ekwipunek<br>
+                    <a style="color: #00aaff; font-weight: 800;">F3</a> → Menu animacji<br>
+                    <a style="color: #00aaff; font-weight: 800;">F5</a> → Zmiana odległości rozmowy<br>
+                    <a style="color: #00aaff; font-weight: 800;">F6</a> → Menu organizacji<br>
+                    <a style="color: #00aaff; font-weight: 800;">F7</a> → Menu Frakcji<br>
+                    <a style="color: #00aaff; font-weight: 800;">Z</a> → Zetka/scoreboard<br>
+                    <a style="color: #00aaff; font-weight: 800;">E</a> → Odrodzenie<br>
+                    <a style="color: #00aaff; font-weight: 800;">T</a> → Chat<br>
+                    <a style="color: #00aaff; font-weight: 800;">Z</a> → Lista graczy<br>
+                    <a style="color: #00aaff; font-weight: 800;">~</a> → Podnoszenie rąk<br>
+                    <a style="color: #00aaff; font-weight: 800;">X</a> → Anulowanie animacji<br>
+                    <a style="color: #00aaff; font-weight: 800;">U</a> → Kluczyki do pojazdów<br>
+                    <a style="color: #00aaff; font-weight: 800;">CTRL</a> → Kucanie/skradanie<br>
+                    <a style="color: #00aaff; font-weight: 800;">K</a> → Menu ubrań<br>
+                    <a style="color: #00aaff; font-weight: 800;">J</a> → Ranking gracza<br>
+                </section>
+                <section class="card-komendy">
+                    <a style="color: #00aaff; font-weight: 800;">/dm [ID]</a> → Prywatna wiadomość do gracza o podanym ID<br>
+                    <a style="color: #00aaff; font-weight: 800;">/hosted</a> → Menu hostowanych bitek<br>
+                    <a style="color: #00aaff; font-weight: 800;">/skrzynki</a> → Menu skrzynek | ItemShop<br>
+                    <a style="color: #00aaff; font-weight: 800;">/tpmenu /gz</a> → Menu teleportacji do wybranego greenzone<br>
+                    <a style="color: #00aaff; font-weight: 800;">/clear</a> → Lokalne wyczyszczenie czatu<br>
+                    <a style="color: #00aaff; font-weight: 800;">/zgloscheatera</a> → Zgłoszenie cheatera poprzez podanie ID<br>
+                    <a style="color: #00aaff; font-weight: 800;">/repair</a> → Naprawa pojazdu<br>
+                    <a style="color: #00aaff; font-weight: 800;">/afk</a> → Zarabianie kasy na AFK<br>
+                    <a style="color: #00aaff; font-weight: 800;">/heal</a> → Uzupełnianie paska życia postaci<br>
+                    <a style="color: #00aaff; font-weight: 800;">/propfix</a> → Naprawa skina<br>
+                    <a style="color: #00aaff; font-weight: 800;">/report</a> → Wiadomość skierowana jedynie do administracji<br>
+                    <a style="color: #00aaff; font-weight: 800;">/skin</a> → Tworzenie skina<br>
+                    <a style="color: #00aaff; font-weight: 800;">/dv</a> → Usuwa auto w DV-ZONE/S1<br>
+                    <a style="color: #00aaff; font-weight: 800;">/schowek</a> → Otwiera zdalny schowek<br>
+                </section>
+                <a class="button klawiszologia" id="btn-next">Rozumiem</a>
+
+                <div class="circle-container">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle active"></div>
+                    <div class="circle"></div>
+                </div>
+            </section>
+        </section>
+        <section class="page">
+            <section class="card-zarzad">
+                <div class="box">
+                    <img class="logo-zarzad" src="nui://fazerp-loadingscreen/ui/assets/montey.png" alt="mOntey">
+                    <h5>mOntey</h5>
+                    <h6>Chief of FazeRP, DEV</h6>
+                </div>
+                <a class="button zespol" id="submit">Gotowe</a>
+                <div class="circle-container">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle active"></div>
+                </div>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

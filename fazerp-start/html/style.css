@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+}
+
+body {
+    color: white;
+    justify-content: center; 
+    align-items: center; 
+}
+
+main {
+    /* display: none; */
+
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    padding: 2rem;
+    height: 50%;
+    width: 50%;
+}
+
+#rules {
+    margin-left: 28.2%;
+}
+
+#keyboard {
+    height: 33px;
+    width: 33px;
+    margin-left: 29.2%;
+}
+
+section h2 a {
+    color: #00aaff;
+}
+
+.card-info {
+    position: fixed;
+    bottom: 100px;
+    height: 40.9vh;
+    width: 47.5vw;
+    text-align: center;
+    padding: 8px 10px;
+    border-radius: 20px;
+    background: #19181B; 
+
+    list-style: none;
+    overflow-y: auto;
+    max-height: 100%;
+}
+
+.card-zarzad {
+    position: fixed;
+    bottom: 100px;
+    height: 40.9vh;
+    width: 47.5vw;
+    padding: 8px 10px;
+    border-radius: 20px;
+    background: #19181B;
+    list-style: none;
+    overflow-y: auto;
+    max-height: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center; 
+    gap: 24px; 
+    flex-wrap: wrap;
+}
+
+.card-rules {
+    position: fixed;
+    bottom: 100px;
+    height: 30.2vh;
+    width: 46.2vw;
+    font-size: 14px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    background: #262427; 
+    list-style: none;
+    overflow-y: auto;
+    max-height: 41%;
+    margin-bottom: 7%;
+}
+
+.card-klawisze {
+    position: fixed;
+    bottom: 100px;
+    height: 30.2vh;
+    width: 16vw;
+    left: 10%;
+    text-align: left;
+    font-size: 14px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    background: #262427; 
+    list-style: none;
+    overflow-y: auto;
+    max-height: 41%;
+    margin-bottom: 7%;
+}
+
+.card-komendy {
+    position: fixed;
+    bottom: 100px;
+    height: 30.2vh;
+    width: 24vw;
+    left: 45%;
+    text-align: left;
+    font-size: 14px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    background: #262427; 
+    list-style: none;
+    overflow-y: auto;
+    max-height: 41%;
+    margin-bottom: 7%;
+}
+
+#napis {
+    position: absolute;
+    left: 65%;
+    top: 24%;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+}
+
+#napis2 {
+    position: absolute;
+    right: 71%;
+    top: 24%;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+}
+
+#text {
+    text-align: center;
+    margin-top: 4%;
+    font-size: 15px;
+    height: 10px;
+}
+
+#texth1 {
+    text-align: center;
+    font-size: 24px;
+    height: 10px;
+}
+
+#texth2 {
+    text-align: center;
+    margin-top: 5%;
+    font-size: 24px;
+    height: 10px;
+    color: white;
+    font-weight: bolder;
+}
+
+#text-card {
+    text-align: left;
+    font-size: 15px;
+    height: 10px;
+    text-align: center;
+}
+
+#logo {
+    width: 155px;
+    height: 155px;
+    text-align: center;
+
+}
+
+.circle-container {
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    margin: 5px 0;
+    border-radius: 50%;
+    background-color: #ccc;
+    transition: background-color 0.3s ease;
+}
+
+.circle.active {
+    background-color: #00aaff; 
+}
+
+.button {
+    position: fixed;
+    left: 50%; 
+    bottom: 115px; 
+    transform: translateX(-50%); 
+    padding: 9px 22px;
+    border-radius: 10px;
+    color: #0F0F0F;
+    background: #00aaff;
+    cursor: pointer;
+    z-index: 10;
+    overflow: hidden;
+    isolation: isolate;
+    --cooldown-duration: 5000ms;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: 0%;
+    background: rgba(255, 255, 255, 0.28);
+    z-index: -1;
+}
+
+.button.is-loading {
+    cursor: not-allowed;
+    background: #4f7488;
+    color: #d7e6ef;
+    opacity: 0.95;
+    pointer-events: none;
+}
+
+.button.is-loading.loading-active::before {
+    animation: buttonFill var(--cooldown-duration) linear forwards;
+}
+
+@keyframes buttonFill {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+
+.box {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    margin-top: 8%;
+}
+
+.logo-zarzad {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 1) 0px 0px 30px;
+    margin-bottom: 10px; 
+}
+
+h5 {
+    font-size: 16px;
+    margin: 5px 0; 
+    font-weight: bold;
+}
+
+h6 {
+    font-size: 14px;
+    margin: 0;
+    color: #888; 
+}
+
+.button:hover {
+    transition: 0.6s;
+    background-color: #2f7bad;
+    color: black;
+}
+
+.button.is-loading:hover {
+    background: #4f7488;
+    color: #d7e6ef;
+}
+
+header a {
+    color: #00aaff;
+}
+
+.page:not(.active) {
+    display: none;
+}
+
+.abouts {
+    background-color: #00131b;
+    border-radius: 20px;
+    margin: 10px;
+    width: 200px;
+}
+
+.abouts img {
+    border-radius: 60px;
+    margin-left: -17%;
+    margin-top: 10px;
+}
+
+.abouts-text {
+    margin: 10px;
+}
+
+.abouts,
+.card-about {
+    display: flex;
+    align-items: row;
+}
+
+.card-info h2{
+    text-align: center;
+    color: #00aaff;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #00131b;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0px #74FECD;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00aaff;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00aaff;
+    border-radius: 4px;
+}
